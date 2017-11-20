@@ -1,0 +1,12 @@
+---
+applications:
+- name: spring-mongodb-ratc
+  memory: 1G
+  random-route: true
+  path: target/spring-mongodb-ratc-pcf-0.0.1-SNAPSHOT.jar
+  services:
+     - config-server
+     - service-registry
+     - circuit-breaker-dashboard
+  env:
+      SPRING_PROFILES_ACTIVE: dev
