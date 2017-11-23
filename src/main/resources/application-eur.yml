@@ -1,0 +1,20 @@
+
+---
+spring:
+  jpa:
+    generate-ddl: true
+ 
+#US Region  
+mongodb:
+    testmessage: hello
+    mongoNodes:
+        - host: 40.114.248.242
+          port: 27017
+        - host: 52.174.145.88
+          port: 27017
+        - host: 104.46.50.88
+          port: 27017            
+    mongoNodeCredentials:
+        - username: admin
+          password: password
+          authSource: admin
